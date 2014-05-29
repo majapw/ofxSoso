@@ -13,19 +13,19 @@ public:
 
 	void						setStartAngle(float iAngle);
 	void						setEndAngle(float iAngle);
-    float                       getStartAngle(); //LM 062012
-    float                       getEndAngle(); //LM 062012
-	void						setColors(ofVec4f iColor1, ofVec4f iColor2);
+  float           getStartAngle(); //LM 062012
+  float           getEndAngle(); //LM 062012
+	void						setColors(ofColor *iColor1, ofColor *iColor2);
 	
 public:	
-	int							resolution;								
+	int             resolution;
 	float						outerRadius,
-								innerRadius,
-								startAngle,
-								endAngle;		
+                  innerRadius,
+                  startAngle,
+                  endAngle;
 
-	ofVec4f                     color1, color2, nullColor;
-	float						height;
+	ofColor         *color1, *color2;
+  float						height;
 
 
 };
